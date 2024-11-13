@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weather Widget</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f5f5fa;
+        margin: 0;
+    }
+    .weather-widget {
+        width: 350px;
+        background: #fff;
+        border-radius: 16px;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+        padding: 30px;
+        text-align: left;
+    }
+    .search-box {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    .search-box input {
+        width: 70%;
+        padding: 10px;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        font-size: 16px;
+    }
+    .search-box button {
+        padding: 10px 20px;
+        background-color: #9c6cfb;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    .weather-info {
+        margin-bottom: 20px;
+    }
+    .weather-info h1 {
+        font-size: 28px;
+        margin: 0;
+        color: #333;
+    }
+    .weather-info .details {
+        font-size: 16px;
+        color: #666;
+        margin-top: 5px;
+    }
+    .temperature {
+        display: flex;
+        align-items:baseline  ;
+        justify-content: right;
+        font-size: 48px;
+        font-weight: bold;
+        color: #333;
+    }
+    .temperature img {
+        width: 40px;
+        height: 40px;
+    }
+    .temperature .temp-value {
+        font-size: 48px;
+        font-weight: bold;
+        color: #333;
+    }
+    .humidity-wind {
+        font-size: 16px;
+        color: #777;
+        margin-top: 10px;
+    }
+    .highlighted {
+        color: #e53935;
+        font-weight: bold;
+    }
+    .footer {
+        font-size: 14px;
+        color: #888;
+        margin-top: 20px;
+        text-align: start;
+    }
+    .footer a {
+        color: #9c6cfb;
+        text-decoration: none;
+    }
+</style>
+</head>
+<body>
+
+<div class="weather-widget">
+    <div class="search-box">
+        <input type="text" placeholder="Enter a city..">
+        <button>Search</button>
+    </div>
+    <div class="weather-info">
+        <h1>Paris</h1>
+        <p class="details">Tuesday 07:45, moderate rain</p>
+    </div>
+    <div class="temperature">
+        <img src="https://img.icons8.com/emoji/48/000000/sun-emoji.png" alt="Sun Icon">
+        <span class="temp-value">24°C</span>
+    </div>
+    <div class="humidity-wind">
+        Humidity: <span class="highlighted">87%</span>, Wind: <span class="highlighted">7.2km/h</span>
+    </div>
+    <div class="footer">
+        This project was coded by <a href="https://github.com/Rennish" target="_blank">Rennish Mboya</a> and is <a href="https://www.netlify.com" target="_blank">hosted on Netlify</a>
+    </div>
+</div>
+
+</body>
+</html>
+
